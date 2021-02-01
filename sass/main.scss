@@ -112,7 +112,7 @@ textarea {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--title-color);
+  color: $title-color;
   transition-property: color;
   transition: color $animation-duration $transition-timing-function;
 }
@@ -160,11 +160,7 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   background-color: $hero-background;
-  background-image: linear-gradient(
-      to right,
-      var(--hero-gradient),
-      var(--hero-gradient)
-    ),
+  background-image: linear-gradient(to right, $hero-gradient, $hero-gradient),
     url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-position: cover;
@@ -555,7 +551,7 @@ textarea {
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  color: var(--white-color);
+  color: $white-color;
   transition-property: background-color;
   transition: $animation-duration $transition-timing-function;
 }
@@ -810,7 +806,7 @@ textarea {
   left: 50%;
   min-width: 528px;
   min-height: 581px;
-  background-color: var(--white-color);
+  background-color: $white-color;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
