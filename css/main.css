@@ -17,6 +17,8 @@
   --hero-gradient: rgba(47, 48, 58, 0.4);
   --social-media: #afb1b8;
   --footer-links-background: rgba(255, 255, 255, 0.1);
+  --animation-duration: 250ms;
+  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 a {
@@ -444,8 +446,8 @@ textarea {
   color: var(--social-media);
   -webkit-transition-property: color, background-color;
   transition-property: color, background-color;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color var(--animation-duration) var(--transition-timing-function), background-color var(--animation-duration) var(--transition-timing-function);
+  transition: color var(--animation-duration) var(--transition-timing-function), background-color var(--animation-duration) var(--transition-timing-function);
 }
 
 .icon-size {
@@ -499,8 +501,8 @@ textarea {
   color: var(--social-media);
   -webkit-transition-property: color, border-color;
   transition-property: color, border-color;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color var(--animation-duration) var(--transition-timing-function), border-color var(--animation-duration) var(--transition-timing-function);
+  transition: color var(--animation-duration) var(--transition-timing-function), border-color var(--animation-duration) var(--transition-timing-function);
 }
 
 .logos {
@@ -640,8 +642,8 @@ textarea {
   color: var(--white-color);
   -webkit-transition-property: background-color;
   transition-property: background-color;
-  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: var(--animation-duration) var(--transition-timing-function);
+  transition: var(--animation-duration) var(--transition-timing-function);
 }
 
 .icons-size {
@@ -813,10 +815,10 @@ textarea {
   transition-property: color, background-color, -webkit-box-shadow;
   transition-property: color, background-color, box-shadow;
   transition-property: color, background-color, box-shadow, -webkit-box-shadow;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color var(--animation-duration) var(--transition-timing-function), background-color var(--animation-duration) var(--transition-timing-function), -webkit-box-shadow var(--animation-duration) var(--transition-timing-function);
+  transition: color var(--animation-duration) var(--transition-timing-function), background-color var(--animation-duration) var(--transition-timing-function), -webkit-box-shadow var(--animation-duration) var(--transition-timing-function);
+  transition: color var(--animation-duration) var(--transition-timing-function), background-color var(--animation-duration) var(--transition-timing-function), box-shadow var(--animation-duration) var(--transition-timing-function);
+  transition: color var(--animation-duration) var(--transition-timing-function), background-color var(--animation-duration) var(--transition-timing-function), box-shadow var(--animation-duration) var(--transition-timing-function), -webkit-box-shadow var(--animation-duration) var(--transition-timing-function);
 }
 
 .button-portfolio:hover,
@@ -851,10 +853,10 @@ textarea {
   transition-property: -webkit-filter;
   transition-property: filter;
   transition-property: filter, -webkit-filter;
-  -webkit-transition: -webkit-filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-filter var(--animation-duration) var(--transition-timing-function);
+  transition: -webkit-filter var(--animation-duration) var(--transition-timing-function);
+  transition: filter var(--animation-duration) var(--transition-timing-function);
+  transition: filter var(--animation-duration) var(--transition-timing-function), -webkit-filter var(--animation-duration) var(--transition-timing-function);
 }
 
 .portfolio-link:focus,
@@ -914,10 +916,10 @@ textarea {
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-transform var(--animation-duration) var(--transition-timing-function);
+  transition: -webkit-transform var(--animation-duration) var(--transition-timing-function);
+  transition: transform var(--animation-duration) var(--transition-timing-function);
+  transition: transform var(--animation-duration) var(--transition-timing-function), -webkit-transform var(--animation-duration) var(--transition-timing-function);
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
 }
@@ -946,8 +948,8 @@ textarea {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: opacity var(--animation-duration) var(--transition-timing-function);
+  transition: opacity var(--animation-duration) var(--transition-timing-function);
 }
 
 .backdrop.is-hidden {
@@ -972,10 +974,10 @@ textarea {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-transform var(--animation-duration) var(--transition-timing-function);
+  transition: -webkit-transform var(--animation-duration) var(--transition-timing-function);
+  transition: transform var(--animation-duration) var(--transition-timing-function);
+  transition: transform var(--animation-duration) var(--transition-timing-function), -webkit-transform var(--animation-duration) var(--transition-timing-function);
 }
 
 .modal-button {
@@ -1005,8 +1007,8 @@ textarea {
   fill: currentColor;
   -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color var(--animation-duration) var(--transition-timing-function);
+  transition: color var(--animation-duration) var(--transition-timing-function);
 }
 
 .modal-button:hover,
@@ -1115,15 +1117,15 @@ textarea {
   color: var(--title-color);
   -webkit-transition-property: fill;
   transition-property: fill;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: fill var(--animation-duration) var(--transition-timing-function);
+  transition: fill var(--animation-duration) var(--transition-timing-function);
 }
 
 .modal-input {
   -webkit-transition-property: border-color, outline;
   transition-property: border-color, outline;
-  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: border-color var(--animation-duration) var(--transition-timing-function), outline var(--animation-duration) var(--transition-timing-function);
+  transition: border-color var(--animation-duration) var(--transition-timing-function), outline var(--animation-duration) var(--transition-timing-function);
 }
 
 .modal-input:hover,
@@ -1170,8 +1172,8 @@ textarea {
   margin-right: 9px;
   -webkit-transition-property: fill, background-color, border-color;
   transition-property: fill, background-color, border-color;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: fill var(--animation-duration) var(--transition-timing-function), background-color var(--animation-duration) var(--transition-timing-function), border-color var(--animation-duration) var(--transition-timing-function);
+  transition: fill var(--animation-duration) var(--transition-timing-function), background-color var(--animation-duration) var(--transition-timing-function), border-color var(--animation-duration) var(--transition-timing-function);
 }
 
 .old-checkbox:checked ~ .checkbox {
