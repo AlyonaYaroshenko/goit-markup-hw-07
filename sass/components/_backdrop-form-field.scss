@@ -1,0 +1,155 @@
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 40px 10px;
+
+  label {
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: $main-text-color;
+  }
+
+  input {
+    height: 40px;
+    width: 100%;
+    padding-left: 30px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+
+  textarea {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 12px 0px 0px 15px;
+  }
+}
+
+.form-field textarea::placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.input-field {
+  position: relative;
+}
+
+.name-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: $title-color;
+  transition-property: fill;
+  transition: fill $animation-duration $transition-timing-function;
+}
+
+.modal-input {
+  transition-property: border-color, outline;
+  transition: border-color $animation-duration $transition-timing-function,
+    outline $animation-duration $transition-timing-function;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border-color: $accent-color;
+    cursor: pointer;
+  }
+
+  &:hover + .name-icon,
+  &:focus + .name-icon {
+    fill: $accent-color;
+  }
+}
+
+.policy-line {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 0px;
+}
+.policy-label {
+  display: flex;
+  justify-content: center;
+}
+
+.policy-link {
+  color: $accent-color;
+  border-bottom: 1px solid $accent-color;
+}
+
+.old-checkbox {
+  margin-right: 9px;
+
+  &:checked ~ .checkbox {
+    background-image: url("../images/icon-check.svg");
+    background-size: contain;
+    fill: $white-color;
+    background-color: $accent-color;
+    background-origin: border-box;
+    border-color: $accent-color;
+  }
+}
+
+.checkbox {
+  width: 16px;
+  height: 15px;
+  border: 2px solid $title-color;
+  border-radius: 3px;
+  margin-right: 9px;
+  transition-property: fill, background-color, border-color;
+  transition: fill $animation-duration $transition-timing-function,
+    background-color $animation-duration $transition-timing-function,
+    border-color $animation-duration $transition-timing-function;
+}
+
+.submit-button {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  padding: 10px 55px;
+  border: none;
+  border-radius: 4px;
+  font: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $white-color;
+  background-color: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.modal-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  right: 8px;
+  top: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: $white-color;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
