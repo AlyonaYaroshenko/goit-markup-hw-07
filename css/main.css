@@ -210,7 +210,7 @@ textarea {
 }
 
 /* button */
-.button {
+.hero-button {
   display: inline-block;
   display: -webkit-box;
   display: -ms-flexbox;
