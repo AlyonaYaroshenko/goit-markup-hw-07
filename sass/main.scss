@@ -1,15 +1,16 @@
 @import "utils/variables";
 @import "base/defaults";
-@import "components/backdrop";
-@import "components/backdrop-form-field";
-@import "components/hero";
-@import "components/header-navigation";
 @import "components/advantages-section";
-@import "components/features-section";
-@import "components/team-section";
+@import "components/backdrop-form-field";
+@import "components/backdrop";
 @import "components/clients-section";
+@import "components/features-section";
 @import "components/footer";
+@import "components/header-logo";
+@import "components/header-navigation";
+@import "components/hero";
 @import "components/portfolio-page";
+@import "components/team-section";
 
 .container {
   width: 1200px;
@@ -19,10 +20,10 @@
   padding-right: 15px;
 }
 
-.header > .container {
-  display: flex;
-  align-items: center;
-}
+// .header > .container {
+//   display: flex;
+//   align-items: center;
+// }
 
 /* logo */
 
