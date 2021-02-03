@@ -204,7 +204,7 @@ textarea {
   color: #fff;
   background-color: #2196f3;
 }
-.advantages-section {
+.advantages {
   padding: 94px 0px 94px;
 }
 .visually-hidden {
@@ -214,14 +214,14 @@ textarea {
   height: 1px;
   margin: -1px;
 }
-.advantages {
+.advantages-section {
   display: inline-block;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 0px;
 }
-.advantages > .item:not(:last-child) {
+.advantages-section > .advantages-item:not(:last-child) {
   margin-right: 30px;
 }
 .advantages-icons {
@@ -392,7 +392,7 @@ textarea {
   background-color: #2196f3;
   color: #fff;
 }
-.clients-section-section {
+.clients-section {
   padding: 94px 0px;
 }
 .clients-section-title {

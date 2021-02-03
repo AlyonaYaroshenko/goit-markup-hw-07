@@ -236,7 +236,7 @@ textarea {
 }
 
 /* advantages */
-.advantages-section {
+.advantages {
   padding: 94px 0px 94px;
 }
 
@@ -248,7 +248,7 @@ textarea {
   margin: -1px;
 }
 
-.advantages {
+.advantages-section {
   display: inline-block;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -256,7 +256,7 @@ textarea {
   padding: 0px;
 }
 
-.advantages > .item:not(:last-child) {
+.advantages-section > .advantages-item:not(:last-child) {
   margin-right: 30px;
 }
 

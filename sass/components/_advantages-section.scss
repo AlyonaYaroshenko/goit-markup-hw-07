@@ -1,10 +1,14 @@
 .advantages {
-  display: inline-block;
-  display: flex;
-  padding: 0px;
+  padding: 94px 0px 94px;
 
   &-section {
-    padding: 94px 0px 94px;
+    display: inline-block;
+    display: flex;
+    padding: 0px;
+  }
+
+  &-section > &-item:not(:last-child) {
+    margin-right: 30px;
   }
 
   &-icons {
@@ -34,9 +38,9 @@
     color: $main-text-color;
   }
 
-  &-item:not(:last-child) {
-    margin-right: 30px;
-  }
+  // &-section-item:not(:last-child) {
+  //   margin-right: 30px;
+  // }
 
   .visually-hidden {
     position: absolute;
