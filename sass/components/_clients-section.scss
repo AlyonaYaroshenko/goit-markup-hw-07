@@ -1,17 +1,17 @@
 .clients-section {
   padding: 94px 0px;
-}
 
-.clients-title {
-  margin: 0px 0px 50px;
-}
+  &-title {
+    margin: 0px 0px 50px;
+  }
 
-.clients-list {
-  display: flex;
-}
+  &-list {
+    display: flex;
+  }
 
-.clients-list > .clients-item:not(:last-child) {
-  margin-right: 30px;
+  &-list > &-item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .logo-link {
@@ -35,8 +35,8 @@
   fill: currentColor;
 }
 
-.clients-item > .logo-link:hover,
-.clients-item > .logo-link:focus {
+&-item > .logo-link:hover,
+&-item > .logo-link:focus {
   border-color: $accent-color;
   color: $accent-color;
 }

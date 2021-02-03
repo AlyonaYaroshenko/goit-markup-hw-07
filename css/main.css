@@ -312,7 +312,7 @@ textarea {
 
 .features-title,
 .team-title,
-.clients-title {
+.clients-section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -460,17 +460,17 @@ textarea {
   padding: 94px 0px;
 }
 
-.clients-title {
+.clients-section-title {
   margin: 0px 0px 50px;
 }
 
-.clients-list {
+.clients-section-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.clients-list > .clients-item:not(:last-child) {
+.clients-section-list > .clients-section-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -504,8 +504,8 @@ textarea {
   fill: currentColor;
 }
 
-.clients-item > .logo-link:hover,
-.clients-item > .logo-link:focus {
+.clients-section-item > .logo-link:hover,
+.clients-section-item > .logo-link:focus {
   border-color: #2196f3;
   color: #2196f3;
 }
@@ -770,7 +770,7 @@ textarea {
   color: #ececec;
 }
 
-.portfolio-section {
+.portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -1120,7 +1120,7 @@ textarea {
   position: relative;
 }
 
-.name-icon {
+.input-field-icon {
   position: absolute;
   left: 12px;
   top: 50%;
@@ -1149,8 +1149,8 @@ textarea {
   cursor: pointer;
 }
 
-.form-field-input:hover + .name-icon,
-.form-field-input:focus + .name-icon {
+.form-field-input:hover + .input-field-icon,
+.form-field-input:focus + .input-field-icon {
   fill: #2196f3;
 }
 

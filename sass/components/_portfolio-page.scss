@@ -3,137 +3,93 @@
   color: #ececec;
 }
 
-.portfolio-section {
+.portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
-}
 
-.buttons-container {
-  display: flex;
-}
+  &-photos {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 56px;
+  }
 
-.buttons > .item:not(:last-child) {
-  margin-right: 8px;
-}
+  &-list {
+    margin-left: 30px;
+    margin-right: 0px;
+    transition-property: filter;
+  }
+  &-link {
+    transition-property: filter;
+    transition: filter $animation-duration $transition-timing-function;
+  }
 
-.buttons {
-  display: inline-block;
-  display: flex;
-  margin: 0px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0px;
-}
+  &-link:focus,
+  &-list:hover {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
 
-.button-portfolio {
-  border: 1px solid transparent;
-  border-radius: 4px;
-  cursor: pointer;
-  padding: 6px 22px;
+  &-photos > &-list:nth-child(3n + 1) {
+    margin-left: 0px;
+  }
 
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.7;
-  text-align: center;
-  background-color: $button-background;
-  transition-property: color, background-color, box-shadow;
-  transition: color $animation-duration $transition-timing-function,
-    background-color $animation-duration $transition-timing-function,
-    box-shadow $animation-duration $transition-timing-function;
-}
+  &-photos > &-list:nth-child(n + 4) {
+    margin-top: 30px;
+  }
 
-.button-portfolio:hover,
-.button-portfolio:focus {
-  background-color: $accent-color;
-  color: $white-color;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-/* portfolio photos */
+  &-set {
+    width: 370px;
+    background-color: $white-color;
+    margin: 0px;
+    padding: 20px 0px 20px 24px;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-top: none;
+    box-sizing: border-box;
+  }
 
-.portfolio-photos {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 56px;
-}
+  &-title {
+    margin: 0px 0px 2px 0px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+  }
 
-.portfolio-list {
-  margin-left: 30px;
-  margin-right: 0px;
-  transition-property: filter;
-}
+  &-text {
+    margin: 0px;
+    font-size: 16px;
+    line-height: 1.9;
+    color: $main-text-color;
+  }
 
-.portfolio-link {
-  transition-property: filter;
-  transition: filter $animation-duration $transition-timing-function;
-}
+  &-info {
+    position: relative;
+    overflow: hidden;
+  }
 
-.portfolio-link:focus,
-.portfolio-list:hover {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
+  &-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    transition-property: transform;
+    transition: transform $animation-duration $transition-timing-function;
+    transform: translateY(100%);
+  }
 
-.portfolio-photos > .portfolio-list:nth-child(3n + 1) {
-  margin-left: 0px;
-}
+  &-list:hover &-overlay,
+  &-link:focus &-overlay {
+    transform: translateY(0);
+  }
 
-.portfolio-photos > .portfolio-list:nth-child(n + 4) {
-  margin-top: 30px;
-}
-
-.fortfolio-set {
-  width: 370px;
-  background-color: $white-color;
-  margin: 0px;
-  padding: 20px 0px 20px 24px;
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  border-top: none;
-  box-sizing: border-box;
-}
-
-.portfolio-title {
-  margin: 0px 0px 2px 0px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-
-.portfolio-text {
-  margin: 0px;
-  font-size: 16px;
-  line-height: 1.9;
-  color: $main-text-color;
-}
-
-.portfolio-info {
-  position: relative;
-  overflow: hidden;
-}
-
-.portfolio-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(33, 150, 243, 0.9);
-  transition-property: transform;
-  transition: transform $animation-duration $transition-timing-function;
-  transform: translateY(100%);
-}
-
-.portfolio-list:hover .portfolio-overlay,
-.portfolio-link:focus .portfolio-overlay {
-  transform: translateY(0);
-}
-
-.portfolio-overlay > p {
-  font-family: inherit;
-  font-size: 18px;
-  line-height: 1.55;
-  color: $white-color;
-  padding: 63px 24px;
-  margin: 0;
+  &-overlay > p {
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 1.55;
+    color: $white-color;
+    padding: 63px 24px;
+    margin: 0;
+  }
 }

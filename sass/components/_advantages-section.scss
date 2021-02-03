@@ -1,48 +1,48 @@
-.advantages-section {
-  padding: 94px 0px 94px;
-}
-
-.visually-hidden {
-  position: absolute;
-  clip: rect (0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
-
 .advantages {
   display: inline-block;
   display: flex;
   padding: 0px;
-}
 
-.advantages > .item:not(:last-child) {
-  margin-right: 30px;
-}
+  &-section {
+    padding: 94px 0px 94px;
+  }
 
-.advantages-icons {
-  display: inline-block;
-  width: 270px;
-  height: 120px;
-  background-color: $button-background;
-  margin-bottom: 30px;
-  padding: 25px 100px;
-  border-radius: 4px;
-}
+  &-icons {
+    display: inline-block;
+    width: 270px;
+    height: 120px;
+    background-color: $button-background;
+    margin-bottom: 30px;
+    padding: 25px 100px;
+    border-radius: 4px;
+  }
 
-.advantages-title {
-  padding: 0px;
-  margin-top: 0px;
-  margin-bottom: 10px;
-  font-weight: 700;
-  line-height: 1.14;
-  text-transform: uppercase;
-}
+  &-title {
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
 
-.advantages-text {
-  padding: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  line-height: 1.72;
-  color: $main-text-color;
+  &-text {
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 1.72;
+    color: $main-text-color;
+  }
+
+  &-item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    clip: rect (0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
 }
